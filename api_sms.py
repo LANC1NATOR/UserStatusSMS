@@ -35,9 +35,9 @@ def sms_sender(sms_text):
 
 
 if __name__ == "__main__":
-    vk_id = input("Введите id ")
+    vk_id = input("Enter user id ")
     while True:
         if get_status(vk_id) == 1:
-            sms_sender(f'{vk_id} сейчас онлайн!')
+            sms_sender(f'{vk_id} is online now!')
             break
         time.sleep(5)
